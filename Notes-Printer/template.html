@@ -1,0 +1,34 @@
+   <html>
+    <head>
+        <viper/>
+        <viper-jquery/>
+        <viper-jquery-mobile/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>     
+    <body>
+        <div data-role="page">
+            <div data-role="header" style="text-align:center"><h1>Viper Printer</h1></div>
+            <div role="main" class="ui-content" style="text-align:center">
+            <p>
+                <label>Write your note:</label>
+            </p>
+            <p>
+                <textarea id='txtData' rows='5' ></textarea>
+            </p>
+            <p>
+            <button type=button onclick="javascript:getValue();" id='btnGet'>Print!</button>
+            </p>     
+            <p id="label"></p>
+            </div>
+            <div data-role="footer">Powered by Viper www.viperize.it</div>
+        </div>
+        <script>
+            function getValue () {
+                var text=$("#txtData").val();
+                ViperApp.call('showmsg',text);
+
+            }
+        </script>
+
+    </body>
+</html> 
