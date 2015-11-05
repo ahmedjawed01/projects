@@ -18,7 +18,7 @@ bcm.auto_init()
 for retry in range(10):
     try:
         print("Establishing link...")
-        wifi.link("Viper", wifi.WIFI_WPA2, "toiviper")
+        wifi.link("Wi-Fi_SSID", wifi.WIFI_WPA2, "Wi-Fi_PWD")
         print("OK")
         break
     except Exception as e:
